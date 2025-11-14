@@ -12,8 +12,8 @@
 //    <script defer src="script-supabase.js"></script>
 // ----------------------------------------------------------------
 
-const SUPABASE_URL = 'URL_DE_TU_PROYECTO_SUPABASE';
-const SUPABASE_KEY = 'TU_CLAVE_PUBLICA_ANON_SUPABASE';
+const SUPABASE_URL = https://hnpznjcpyyzxhfkldkcj.supabase.co;
+const SUPABASE_KEY = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhucHpuamNweXl6eGhma2xka2NqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjMwODcyODMsImV4cCI6MjA3ODY2MzI4M30.7_yHRRIs_dEXduYBEoZurjIXs2grBFjwWmjKVfRbZLI;
 
 // Si las claves no están puestas, detiene el script para evitar errores
 if (SUPABASE_URL === 'URL_DE_TU_PROYECTO_SUPABASE' || SUPABASE_KEY === 'TU_CLAVE_PUBLICA_ANON_SUPABASE') {
@@ -759,3 +759,4 @@ function createVehicleCardHTML(v, type) {
         </div>
     `;
 }
+
