@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehículos de Alquiler - AutoElite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo-autoelite.png" alt="AutoElite Logo" class="logo-light">
+                <img src="assets/logo-autoelite-blanco.png" alt="AutoElite Logo" class="logo-dark">
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" data-key="nav_inicio">Inicio</a></li> 
+                    <li><a href="vehiculos.html" data-key="nav_vehiculos">Vehículos</a></li>
+                    <li><a href="vender.html" data-key="nav_vender">Vender</a></li>
+                    <li><a href="servicios.html" data-key="nav_servicios" class="active">Otros Servicios</a></li>
+                    <li><a href="ubicacion.html" data-key="nav_ubicacion">Donde Encontrarnos</a></li>
+                    <li><a href="soporte.html" data-key="nav_soporte">Soporte</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <form class="search-bar"><input type="text" placeholder="Buscar..." data-key="search_placeholder"><button type="submit">🔍</button></form>
+                <div class="lang-switcher"><button id="lang-es">ES</button><span>/</span><button id="lang-en">EN</button></div>
+                <div class="theme-switch-wrapper"><label class="theme-switch" for="theme-toggle"><input type="checkbox" id="theme-toggle" /><span class="slider round"></span></label></div>
+                <a href="login.html" class="login-link" data-key="nav_login_cliente">Acceso Clientes</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="page-content">
+        <div class="container">
+            <h1 data-key="alquiler_title">Vehículos de Alquiler Disponibles</h1>
+            <p class="subtitle" data-key="alquiler_subtitle">Encuentra el coche perfecto para tu próximo viaje.</p>
+            
+            <section id="alquiler-grid" class="zone-grid">
+                </section>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column"><h4>AutoElite</h4><p data-key="footer_desc">Tu concesionario de confianza...</p></div>
+                <div class="footer-column"><h4 data-key="nav_contacto">Contacto</h4><p>+34 900 123 456</p><p>info@autoelite.com</p></div>
+                <div class="footer-column"><h4 data-key="footer_social">Síguenos</h4><div class="social-icons"><a href="#">(fb)</a> <a href="#">(ig)</a> <a href="#">(tw)</a> <a href="#">(in)</a></div></div>
+            </div>
+            <div class="footer-bottom">
+                <div class="legal-links"><a href="#" data-key="footer_legal">Aviso Legal</a><a href="#" data-key="footer_privacy">Política de Privacidad</a><a href="#" data-key="footer_cookies">Política de Cookies</a></div>
+                <div class="copyright">
+                    <p>© 2025 AutoElite. <span data-key="footer_rights">Todos los derechos reservados.</span></p>
+                    </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="legal-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close-btn">×</button>
+            <h2 id="legal-modal-title"></h2>
+            <div id="legal-modal-content">
+                <p>Cargando contenido...</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="purchase-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close-btn" id="purchase-modal-close">×</button>
+            <h2 data-key="modal_title">Proceso de Compra</h2>
+            <p data-key="modal_desc">Estás a punto de iniciar la reserva de:</p>
+            <h3 id="modal-vehicle-name"></h3>
+            <p data-key="modal_step1"><b>Paso 1:</b> Un asesor se pondrá en contacto contigo.</p>
+            <p data-key="modal_step2"><b>Paso 2:</b> Confirmación y documentación.</p>
+            <p data-key="modal_step3"><b>Paso 3:</b> ¡Recogida de tu vehículo!</p>
+            <button class="btn btn-primario" id="purchase-modal-confirm" data-key="modal_confirm">Confirmar Interés</button>
+        </div>
+    </div>
+    
+    <div id="success-modal" class="modal-overlay">
+        <div class="modal-content success-modal-content">
+            <div class="success-icon">✓</div>
+            <h3 data-key="modal_title">¡Gracias por tu interés!</h3>
+            <p data-key="modal_desc_simulacion">Un asesor se contactará pronto. (Simulación)</p>
+            <button class="btn btn-primario" id="success-modal-close" data-key="modal_aceptar">Aceptar</button>
+        </div>
+    </div>
+
+    <script defer src="script.js"></script>
+</body>
+</html>

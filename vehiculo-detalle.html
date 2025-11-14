@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del Vehículo - AutoElite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-vehiculo-detalle">
+
+    <header class="main-header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo-autoelite.png" alt="AutoElite Logo" class="logo-light">
+                <img src="assets/logo-autoelite-blanco.png" alt="AutoElite Logo" class="logo-dark">
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" data-key="nav_inicio">Inicio</a></li> 
+                    <li><a href="vehiculos.html" data-key="nav_vehiculos" class="active">Vehículos</a></li>
+                    <li><a href="vender.html" data-key="nav_vender">Vender</a></li>
+                    <li><a href="servicios.html" data-key="nav_servicios">Otros Servicios</a></li>
+                    <li><a href="ubicacion.html" data-key="nav_ubicacion">Donde Encontrarnos</a></li>
+                    <li><a href="soporte.html" data-key="nav_soporte">Soporte</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <form class="search-bar"><input type="text" placeholder="Buscar..." data-key="search_placeholder"><button type="submit">🔍</button></form>
+                <div class="lang-switcher"><button id="lang-es">ES</button><span>/</span><button id="lang-en">EN</button></div>
+                <div class="theme-switch-wrapper"><label class="theme-switch" for="theme-toggle"><input type="checkbox" id="theme-toggle" /><span class="slider round"></span></label></div>
+                <a href="login.html" class="login-link" data-key="nav_login_cliente">Acceso Clientes</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="page-content">
+        <div class="container">
+            <div class="detail-header">
+                <h1 id="vehicle-title-placeholder">Cargando nombre del vehículo...</h1>
+                <h2 id="vehicle-subtitle-placeholder"></h2>
+            </div>
+
+            <div class="detail-layout">
+                <div class="detail-main">
+                    <section class="gallery-container">
+                        <div class="gallery-main-image">
+                            <img id="gallery-main-placeholder" src="assets/coche-default.png" alt="Vehículo principal">
+                            <button class="gallery-nav-button prev-button" id="prev-image">&#10094;</button>
+                            <button class="gallery-nav-button next-button" id="next-image">&#10095;</button>
+                            <button class="gallery-zoom-button" id="zoom-image">🔍</button>
+                        </div>
+                        <div class="gallery-thumbnails" id="gallery-thumbnails-container">
+                            </div>
+                    </section>
+                    
+                    <section class="specs-container">
+                        <h3>Datos Técnicos</h3>
+                        <div class="specs-grid" id="specs-grid-container">
+                            </div>
+                    </section>
+                </div>
+                
+                <aside class="detail-sidebar">
+                    <div class="sidebar-box price-box">
+                        <div class="price-header">
+                            <div class="price" id="vehicle-price-placeholder">€--.---</div>
+                            
+                            <div class="price-badge" id="vehicle-price-badge" style="display: none;">
+                                <span id="vehicle-price-badge-text" data-key="calif_justo">Precio Justo</span>
+                                <i id="open-price-info">ⓘ</i>
+                            </div>
+                        </div>
+                        
+                        <p class="monthly-payment" id="vehicle-monthly-payment" style="display: none;">
+                            <span data-key="finan_desde">desde</span> 
+                            <strong>€--- / mes</strong>
+                        </p>
+                        
+                        <a href="soporte.html" class="btn btn-primario full-width" data-key="vehiculos_btn_contactar">Contactar</a>
+                        
+                        <div class="sidebar-buttons">
+                            <button class="btn-sidebar" id="save-button">
+                                <span class="icon">☆</span> <span data-key="vehiculos_btn_guardar">Guardar</span>
+                            </button>
+                            <button class="btn-sidebar" id="share-button">
+                                <span class="icon">🔗</span> <span data-key="vehiculos_btn_compartir">Compartir</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="financing-calculator sidebar-box" style="display: none;">
+                        <div class="financing-tab">
+                            <h4 data-key="finan_titulo">Financiación</h4>
+                        </div>
+                        <div class="financing-content">
+                            <div class="financing-row">
+                                <div class="financing-monthly-rate">
+                                    <span data-key="finan_tarifa_mensual">Tarifa mensual</span>
+                                    <span data-key="finan_desde">desde</span>
+                                </div>
+                                <div class="financing-rate-price">
+                                    <strong id="financing-monthly-price">€---</strong>
+                                </div>
+                            </div>
+                            <div class="financing-links">
+                                <a href="#" id="open-financing-modal" data-key="finan_calcular">Calcular financiación</a>
+                                <a href="#" data-key="finan_credito_linea">Crédito en línea</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="sidebar-box seller-box" id="vehicle-seller-box">
+                        </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column"><h4>AutoElite</h4><p data-key="footer_desc">Tu concesionario de confianza...</p></div>
+                <div class="footer-column"><h4 data-key="nav_contacto">Contacto</h4><p>+34 900 123 456</p><p>info@autoelite.com</p></div>
+                <div class="footer-column"><h4 data-key="footer_social">Síguenos</h4><div class="social-icons"><a href="#">(fb)</a> <a href="#">(ig)</a> <a href="#">(tw)</a> <a href="#">(in)</a></div></div>
+            </div>
+            <div class="footer-bottom">
+                <div class="legal-links"><a href="#" data-key="footer_legal">Aviso Legal</a><a href="#" data-key="footer_privacy">Política de Privacidad</a><a href="#" data-key="footer_cookies">Política de Cookies</a></div>
+                <div class="copyright">
+                    <p>© 2025 AutoElite. <span data-key="footer_rights">Todos los derechos reservados.</span></p>
+                    </div>
+            </div>
+        </div>
+    </footer>
+    
+    <div id="legal-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close-btn">×</button>
+            <h2 id="legal-modal-title"></h2>
+            <div id="legal-modal-content">
+                <p>Cargando contenido...</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="zoom-modal" class="modal-overlay">
+        <button class="modal-close-btn" id="zoom-modal-close">×</button>
+        <div class="modal-content">
+            <img id="zoom-modal-image" src="" alt="Imagen ampliada">
+        </div>
+    </div>
+    
+    <div id="price-info-modal" class="modal-overlay dark-modal">
+        <div class="modal-content">
+            <button class="modal-close-btn" id="price-info-modal-close">×</button>
+            <h3 data-key="modal_calif_titulo">Calificación de precio de AutoElite</h3>
+            <p data-key="modal_calif_desc">En comparación con los últimos vehículos similares...</p>
+            
+            <div class="price-scale">
+                <div class="price-bar-container">
+                    <div class="price-bar-segment" id="calif-muy_buen"></div>
+                    <div class="price-bar-segment" id="calif-buen"></div>
+                    <div class="price-bar-segment" id="calif-justo"></div>
+                    <div class="price-bar-segment" id="calif-aumentado"></div>
+                    <div class="price-bar-segment" id="calif-alto"></div>
+                </div>
+            </div>
+            
+            <h4 data-key="modal_calif_subtitulo">¿Cómo funciona la valoración de precios?</h4>
+            <p data-key="modal_calif_p1">...</p>
+            <div class="price-desc-item">
+                <div class="price-dot dot-muy_buen"></div>
+                <p><strong data-key="calif_muy_buen">...</strong> <span data-key="modal_calif_p_muy_buen">...</span></p>
+            </div>
+            <div class="price-desc-item">
+                <div class="price-dot dot-buen"></div>
+                <p><strong data-key="calif_buen">...</strong> <span data-key="modal_calif_p_buen">...</span></p>
+            </div>
+            <div class="price-desc-item">
+                <div class="price-dot dot-justo"></div>
+                <p><strong data-key="calif_justo">...</strong> <span data-key="modal_calif_p_justo">...</span></p>
+            </div>
+            <div class="price-desc-item">
+                <div class="price-dot dot-aumentado"></div>
+                <p><strong data-key="calif_aumentado">...</strong> <span data-key="modal_calif_p_aumentado">...</span></p>
+            </div>
+            <div class="price-desc-item">
+                <div class="price-dot dot-alto"></div>
+                <p><strong data-key="calif_alto">...</strong> <span data-key="modal_calif_p_alto">...</span></p>
+            </div>
+        </div>
+    </div>
+    
+    <div id="financing-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close-btn" id="financing-modal-close">×</button>
+            <h3 data-key="finan_modal_titulo">Calcular Financiación</h3>
+            <div class="form-group">
+                <label data-key="finan_modal_precio">Precio del vehículo</label>
+                <span id="finan-precio-total">€--.---</span>
+            </div>
+            <div class="form-group">
+                <label for="finan-entrada" data-key="finan_modal_entrada">Entrada (€)</label>
+                <input type="number" id="finan-entrada" placeholder="Ej: 20000">
+            </div>
+            <div class="form-group">
+                <label for="finan-mensual" data-key="finan_modal_pago_mes">Pago mensual (€)</label>
+                <input type="number" id="finan-mensual" placeholder="Ej: 1250">
+            </div>
+            <button class="btn btn-primario full-width" id="finan-modal-calculate" data-key="finan_modal_calcular_btn">Calcular</button>
+            <div class="financing-result" id="finan-resultado"></div>
+        </div>
+    </div>
+
+    <div id="success-modal" class="modal-overlay">
+        <div class="modal-content success-modal-content">
+            <div class="success-icon">✓</div>
+            <h3 data-key="modal_title">¡Gracias por tu interés!</h3>
+            <p data-key="modal_desc_simulacion">Un asesor se contactará pronto. (Simulación)</p>
+            <button class="btn btn-primario" id="success-modal-close" data-key="modal_aceptar">Aceptar</button>
+        </div>
+    </div>
+    
+    <div id="purchase-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close-btn" id="purchase-modal-close">×</button>
+            <h2 data-key="modal_title">Proceso de Compra</h2>
+            <p data-key="modal_desc">Estás a punto de iniciar la reserva de:</p>
+            <h3 id="modal-vehicle-name"></h3>
+            <p data-key="modal_step1"><b>Paso 1:</b> Un asesor se pondrá en contacto contigo.</p>
+            <p data-key="modal_step2"><b>Paso 2:</b> Confirmación y documentación.</p>
+            <p data-key="modal_step3"><b>Paso 3:</b> ¡Recogida de tu vehículo!</p>
+            <button class="btn btn-primario" id="purchase-modal-confirm" data-key="modal_confirm">Confirmar Interés</button>
+        </div>
+    </div>
+    
+    <script defer src="script.js"></script>
+</body>
+</html>

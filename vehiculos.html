@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehículos - AutoElite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo-autoelite.png" alt="AutoElite Logo" class="logo-light">
+                <img src="assets/logo-autoelite-blanco.png" alt="AutoElite Logo" class="logo-dark">
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" data-key="nav_inicio">Inicio</a></li> 
+                    <li><a href="vehiculos.html" data-key="nav_vehiculos" class="active">Vehículos</a></li>
+                    <li><a href="vender.html" data-key="nav_vender">Vender</a></li>
+                    <li><a href="servicios.html" data-key="nav_servicios">Otros Servicios</a></li>
+                    <li><a href="ubicacion.html" data-key="nav_ubicacion">Donde Encontrarnos</a></li>
+                    <li><a href="soporte.html" data-key="nav_soporte">Soporte</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <form class="search-bar"><input type="text" placeholder="Buscar..." data-key="search_placeholder"><button type="submit">🔍</button></form>
+                <div class="lang-switcher"><button id="lang-es">ES</button><span>/</span><button id="lang-en">EN</button></div>
+                <div class="theme-switch-wrapper"><label class="theme-switch" for="theme-toggle"><input type="checkbox" id="theme-toggle" /><span class="slider round"></span></label></div>
+                <a href="login.html" class="login-link" data-key="nav_login_cliente">Acceso Clientes</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="page-content">
+        <div class="container">
+            <h1 data-key="vehiculos_title">Nuestros Vehículos</h1>
+            
+            <div class="vehicle-page-layout">
+                <aside class="filter-sidebar">
+                    <h3 data-key="filter_title">Filtrar Búsqueda</h3>
+                    <form id="filter-form">
+                        <div class="form-group"><label for="filter-marca" data-key="filter_marca">Marca</label><select id="filter-marca" name="marca"><option value="todas" data-key="filter_todas">Todas</option><option value="Porsche">Porsche</option><option value="Mercedes-Benz">Mercedes-Benz</option><option value="BMW">BMW</option><option value="Audi">Audi</option><option value="McLaren">McLaren</option><option value="Nissan">Nissan</option><option value="Volkswagen">Volkswagen</option><option value="Toyota">Toyota</option><option value="Corvette">Corvette</option><option value="Ferrari">Ferrari</option><option value="Lamborghini">Lamborghini</option></select></div>
+                        <div class="form-group"><label for="filter-color" data-key="filter_color">Color</label><select id="filter-color" name="color"><option value="todos" data-key="filter_todos">Todos</option><option value="Negro">Negro</option><option value="Blanco">Blanco</option><option value="Amarillo">Amarillo</option><option value="Gris">Gris</option><option value="Rojo">Rojo</option><option value="Azul">Azul</option><option value="Verde">Verde</option><option value="Naranja">Naranja</option></select></div>
+                        <div class="form-group"><label for="filter-precio" data-key="filter_precio">Precio (max €)</label><input type="range" id="filter-precio" name="precio" min="25000" max="800000" value="800000" step="1000"><span id="precio-output">€800,000</span></div>
+                        <div class="form-group"><label for="filter-km" data-key="filter_km">Kilometraje (max km)</label><input type="range" id="filter-km" name="km" min="0" max="250000" value="250000" step="1000"><span id="km-output">250,000 km</span></div>
+                        <div class="form-group">
+                            <label for="filter-potencia" data-key="filter_potencia_max">Potencia (max CV)</label>
+                            <input type="range" id="filter-potencia" name="potencia" min="50" max="1050" value="1050" step="10">
+                            <span id="potencia-output">1050 CV</span>
+                        </div>
+                        <div class="form-group"><label for="filter-ano" data-key="filter_ano">Año (mínimo)</label><select id="filter-ano" name="ano"><option value="2018">2018</option><option value="2019">2019</option><option value="2020">2020</option><option value="2021">2021</option><option value="2022">2022</option><option value="2023">2023</option><option value="2024">2024</option></select></div>
+                    </form>
+                </aside>
+
+                <section id="vehicle-list-container" class="vehicle-list-view">
+                    </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column"><h4>AutoElite</h4><p data-key="footer_desc">Tu concesionario de confianza...</p></div>
+                <div class="footer-column"><h4 data-key="nav_contacto">Contacto</h4><p>+34 900 123 456</p><p>info@autoelite.com</p></div>
+                <div class="footer-column"><h4 data-key="footer_social">Síguenos</h4><div class="social-icons"><a href="#">(fb)</a> <a href="#">(ig)</a> <a href="#">(tw)</a> <a href="#">(in)</a></div></div>
+            </div>
+            <div class="footer-bottom">
+                <div class="legal-links"><a href="#" data-key="footer_legal">Aviso Legal</a><a href="#" data-key="footer_privacy">Política de Privacidad</a><a href="#" data-key="footer_cookies">Política de Cookies</a></div>
+                <div class="copyright">
+                    <p>© 2025 AutoElite. <span data-key="footer_rights">Todos los derechos reservados.</span></p>
+                    </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="legal-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close-btn">×</button>
+            <h2 id="legal-modal-title"></h2>
+            <div id="legal-modal-content">
+                <p>Cargando contenido...</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="purchase-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close-btn">×</button>
+            <h2 data-key="modal_title">Proceso de Compra</h2>
+            <p data-key="modal_desc">Estás a punto de iniciar la compra de:</p>
+            <h3 id="modal-vehicle-name"></h3>
+            <p data-key="modal_step1"><b>Paso 1:</b> Un asesor se pondrá en contacto contigo.</p>
+            <p data-key="modal_step2"><b>Paso 2:</b> Financiación y documentación.</p>
+            <p data-key="modal_step3"><b>Paso 3:</b> ¡Entrega de tu nuevo vehículo!</p>
+            <button class="btn btn-primario" data-key="modal_confirm" id="purchase-modal-confirm">Confirmar Interés</button>
+        </div>
+    </div>
+    
+    <div id="success-modal" class="modal-overlay">
+        <div class="modal-content success-modal-content">
+            <div class="success-icon">✓</div>
+            <h3 data-key="modal_title">¡Gracias por tu interés!</h3>
+            <p data-key="modal_desc_simulacion">Un asesor se contactará pronto. (Simulación)</p>
+            <button class="btn btn-primario" id="success-modal-close" data-key="modal_aceptar">Aceptar</button>
+        </div>
+    </div>
+
+    <script defer src="script.js"></script>
+</body>
+</html>

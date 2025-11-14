@@ -1,0 +1,445 @@
+[
+    {
+        "id": 1,
+        "nombre": "Porsche 911 Carrera",
+        "precio": 72990,
+        "pago_mensual": 1250,
+        "calificacion_precio": "buen",
+        "tipo": "venta",
+        "marca": "Porsche",
+        "color": "Negro",
+        "ano": 2018,
+        "kilometraje": 103000,
+        "potencia_cv": 349,
+        "destacado": false,
+        "imagenUrl": "assets/vehiculos/porsche911.png",
+        "imagenes_galeria": [
+            "assets/vehiculos/faro_porche911.png",
+            "assets/vehiculos/culo_porche911.png",
+            "assets/vehiculos/interior_porche911.png"
+        ],
+        "datos_tecnicos": {
+            "categoria": "Convertible / Roadster",
+            "kilometraje": "103.000 km",
+            "potencia": "257 kW (349 CV)",
+            "combustible": "Gasolina",
+            "caja_de_cambios": "Automático",
+            "primera_inscripcion": "01/2018"
+
+        },
+        "vendedor": {
+            "nombre": "AutoElite",
+            "rating": 4.8,
+            "reviews": 215,
+            "direccion": "Av. Villa Rosa, 1, 29004 Málaga"
+        }
+    },
+    {
+        "id": 2,
+        "nombre": "Mercedes-Benz S 500",
+        "precio": 84900,
+        "pago_mensual": 1400,
+        "calificacion_precio": "justo",
+        "tipo": "venta",
+        "marca": "Mercedes-Benz",
+        "color": "Blanco",
+        "ano": 2022,
+        "kilometraje": 89517,
+        "potencia_cv": 367,
+        "destacado": false,
+        "imagenUrl": "assets/vehiculos/mercedes_s500.png",
+        "imagenes_galeria": [
+            "assets/vehiculos/lado_mercedes.png",
+            "assets/vehiculos/culo_mercedes.png",
+            "assets/vehiculos/interior_mercedes.png"
+        ],
+        "datos_tecnicos": { 
+            "categoria": "Limusina", 
+            "potencia": "270 kW (367 CV)", 
+            "caja_de_cambios": "Automático", 
+            "combustible": "Gasolina", 
+            "kilometraje": "89.517 km", 
+            "primera_inscripcion": "12/2022" 
+        },
+        "vendedor": { "nombre": "AutoElite", "rating": 4.8, "reviews": 215, "direccion": "Av. Villa Rosa, 1, 29004 Málaga" }
+    },
+    {
+        "id": 3,
+        "nombre": "BMW M4 Competition",
+        "precio": 67980,
+        "pago_mensual": 1100,
+        "calificacion_precio": "buen",
+        "tipo": "venta",
+        "marca": "BMW",
+        "color": "Gris",
+        "ano": 2022,
+        "kilometraje": 54714,
+        "potencia_cv": 510,
+        "destacado": false,
+        "imagenUrl": "assets/vehiculos/m4.png",
+        "imagenes_galeria": [
+            "assets/vehiculos/faro_m4.png",
+            "assets/vehiculos/culo_m4.png",
+            "assets/vehiculos/interior_m4.png"
+        ],
+        "datos_tecnicos": { 
+            "categoria": "Deportivo / Coupé", 
+            "potencia": "375 kW (510 CV)", 
+            "caja_de_cambios": "Automático", 
+            "combustible": "Gasolina", 
+            "kilometraje": "54.714 km", 
+            "primera_inscripcion": "07/2022" 
+        },
+        "vendedor": { "nombre": "AutoElite", "rating": 4.8, "reviews": 215, "direccion": "Av. Villa Rosa, 1, 29004 Málaga" }
+    },
+    {   "id": 4,
+        "nombre": "Audi RS 3 Quatto", 
+        "precio": 63500, 
+        "pago_mensual": 1050,
+        "calificacion_precio": "muy_buen",
+        "tipo": "venta", 
+        "marca": "Audi", 
+        "color": "Verde",
+        "ano": 2024, 
+        "kilometraje": 8200, 
+        "potencia_cv": 400,
+        "destacado": false, 
+        "imagenUrl": "assets/vehiculos/audirs3.png", 
+        "imagenes_galeria": [
+            "assets/vehiculos/lado_rs3.png",
+            "assets/vehiculos/culo_rs3.png",
+            "assets/vehiculos/interior_rs3.png"
+        ], 
+        "datos_tecnicos": {
+            "categoria": "Compacto Deportivo ",
+            "kilometraje": "8.200 km",
+            "potencia": "294 kW (400 CV)",
+            "combustible": "Gasolina",
+            "caja_de_cambios": "Automático",
+            "primera_inscripcion": "06/2024"
+        },
+        "vendedor": { "nombre": "AutoElite", "rating": 4.8, "reviews": 215, "direccion": "Av. Villa Rosa, 1, 29004 Málaga" }
+    },
+    { "id": 5, 
+        "nombre": "Nissan GT-R", 
+        "precio": 96000, 
+        "pago_mensual": 1500,
+        "calificacion_precio": "justo",
+        "tipo": "venta", 
+        "marca": "Nissan", 
+        "color": "Naranja", 
+        "ano": 2019, 
+        "kilometraje": 54700, 
+        "potencia_cv": 570,
+        "destacado": false, 
+        "imagenUrl": "assets/vehiculos/gtr.png", 
+        "imagenes_galeria": [
+            "assets/vehiculos/faro_gtr.png",
+            "assets/vehiculos/culo_gtr.png",
+            "assets/vehiculos/interior_gtr.png"
+        ], 
+        "datos_tecnicos": { 
+                "categoria": "Deportivo / Coupé",
+                "kilometraje": "54.700 km",
+                "potencia": "419 kW (570 CV)",
+                "combustible": "Gasolina",
+                "caja_de_cambios": "Automático",
+                "primera_inscripcion": "08/2019"
+        }, 
+        "vendedor": { "nombre": "AutoElite", "rating": 4.8, "reviews": 215, "direccion": "Av. Villa Rosa, 1, 29004 Málaga" } 
+    },
+    { "id": 6, 
+        "nombre": "Toyota Supra MK5", 
+        "precio": 54999, 
+        "pago_mensual": 950,
+        "calificacion_precio": "buen",
+        "tipo": "venta", 
+        "marca": "Toyota", 
+        "color": "Gris", 
+        "ano": 2021, 
+        "kilometraje": 25500, 
+        "potencia_cv": 387,
+        "destacado": false, 
+        "imagenUrl": "assets/vehiculos/supra.png", 
+        "imagenes_galeria": [
+            "assets/vehiculos/logo_supra.png",
+            "assets/vehiculos/culo_supra.png",
+            "assets/vehiculos/interior_supra.png"
+            ], 
+        "datos_tecnicos": { 
+                "categoria": "Deportivo / Coupé",
+                "kilometraje": "25.500 km",
+                "potencia": "285 kW (387 CV)",
+                "combustible": "Gasolina",
+                "caja_de_cambios": "Automático",
+                "primera_inscripcion": "01/2021"
+        }, "vendedor": { "nombre": "AutoElite", "rating": 4.8, "reviews": 215, "direccion": "Av. Villa Rosa, 1, 29004 Málaga" } 
+    },
+    { "id": 7, 
+        "nombre": "BMW M5 CS", 
+        "precio": 148750, 
+        "pago_mensual": 2200,
+        "calificacion_precio": "aumentado",
+        "tipo": "venta", 
+        "marca": "BMW", 
+        "color": "Verde", 
+        "ano": 2021, 
+        "kilometraje": 5875, 
+        "potencia_cv": 635,
+        "destacado": false, 
+        "imagenUrl": "assets/vehiculos/m5.png", 
+        "imagenes_galeria": [
+            "assets/vehiculos/motor_m5.png",
+            "assets/vehiculos/culo_m5.png",
+            "assets/vehiculos/interior_m5.png"
+            ], 
+        "datos_tecnicos": { 
+                "categoria": "Deportivo / Limusina",
+                "kilometraje": "5.875 km",
+                "potencia": "467 kW (635 CV)",
+                "combustible": "Gasolina",
+                "caja_de_cambios": "Automático",
+                "primera_inscripcion": "11/2021"
+        }, "vendedor": { "nombre": "AutoElite", "rating": 4.8, "reviews": 215, "direccion": "Av. Villa Rosa, 1, 29004 Málaga"} 
+    },
+    { "id": 8, 
+        "nombre": "Mercedes-Benz A45 AMG", 
+        "precio": 52999, 
+        "pago_mensual": 900,
+        "calificacion_precio": "justo",
+        "tipo": "venta", 
+        "marca": "Mercedes-Benz", 
+        "color": "Gris", 
+        "ano": 2022, 
+        "kilometraje": 26380, 
+        "potencia_cv": 421,
+        "destacado": false, 
+        "imagenUrl": "assets/vehiculos/a45amg.png", 
+        "imagenes_galeria": [
+            "assets/vehiculos/lado_amg45.png",
+            "assets/vehiculos/culo_amg45.png",
+            "assets/vehiculos/interior_amg45.png"
+            ], 
+        "datos_tecnicos": { 
+                "categoria": "Compacto Deportivo ",
+                "kilometraje": "26.380 km",
+                "potencia": "310 kW (421 CV)",
+                "combustible": "Gasolina",
+                "caja_de_cambios": "Automático",
+                "primera_inscripcion": "05/2022"
+        }, "vendedor": { "nombre": "AutoElite", "rating": 4.8, "reviews": 215, "direccion": "Av. Villa Rosa, 1, 29004 Málaga" } 
+    },
+    { "id": 9, 
+        "nombre": "Porsche 991 GT3 RS", 
+        "precio": 233000, 
+        "pago_mensual": 3500,
+        "calificacion_precio": "aumentado",
+        "tipo": "venta", 
+        "marca": "Porsche", 
+        "color": "Azul", 
+        "ano": 2018, 
+        "kilometraje": 16716, 
+        "potencia_cv": 521,
+        "destacado": true, 
+        "imagenUrl": "assets/vehiculos/gt3rs.png", 
+        "imagenes_galeria": [
+            "assets/vehiculos/faro_gt3rs.png",
+            "assets/vehiculos/culo_gt3rs.png",
+            "assets/vehiculos/interior_gt3rs.png"
+            ], 
+        "datos_tecnicos": { 
+                "categoria": "Deportivo / Coupé",
+                "kilometraje": "16.716 km",
+                "potencia": "383 kW (521 CV)",
+                "combustible": "Gasolina",
+                "caja_de_cambios": "Automático",
+                "primera_inscripcion": "06/2018"
+        }, "vendedor": { "nombre": "AutoElite", "rating": 4.8, "reviews": 215, "direccion": "Av. Villa Rosa, 1, 29004 Málaga" } 
+    },
+    { "id": 10, 
+        "nombre": "Ferrari 488 Pista Spider", 
+        "precio": 615000, 
+        "pago_mensual": 9000,
+        "calificacion_precio": "alto",
+        "tipo": "venta", 
+        "marca": "Ferrari", 
+        "color": "Gris", 
+        "ano": 2019, 
+        "kilometraje": 15896, 
+        "potencia_cv": 721,
+        "destacado": false, 
+        "imagenUrl": "assets/vehiculos/488pista.png", 
+        "imagenes_galeria": [
+            "assets/vehiculos/rueda_488pista.png",
+            "assets/vehiculos/culo_488pista.png",
+            "assets/vehiculos/interior_488pista.png"
+            ], 
+        "datos_tecnicos": { 
+                "categoria": "Cabrio / Roadster",
+                "kilometraje": "15.896 km",
+                "potencia": "530 kW (721 CV)",
+                "combustible": "Gasolina",
+                "caja_de_cambios": "Automático",
+                "primera_inscripcion": "05/2019"
+        }, "vendedor": { "nombre": "AutoElite", "rating": 4.8, "reviews": 215, "direccion": "Av. Villa Rosa, 1, 29004 Málaga" } 
+    },
+    { "id": 11, 
+        "nombre": "Audi R8 Performance", 
+        "precio": 119990, 
+        "pago_mensual": 1900,
+        "calificacion_precio": "buen",
+        "tipo": "venta", 
+        "marca": "Audi", 
+        "color": "Blanco", 
+        "ano": 2019, 
+        "kilometraje": 32000, 
+        "potencia_cv": 620,
+        "destacado": false, 
+        "imagenUrl": "assets/vehiculos/r8.png", 
+        "imagenes_galeria": [
+            "assets/vehiculos/rueda_r8.png",
+            "assets/vehiculos/culo_r8.png",
+            "assets/vehiculos/interior_r8.png"
+            ], 
+        "datos_tecnicos": { 
+                "categoria": "Cabrio / Roadster",
+                "kilometraje": "32000 km",
+                "potencia": "456 kW (620 CV)",
+                "combustible": "Gasolina",
+                "caja_de_cambios": "Automático",
+                "primera_inscripcion": "03/2019" 
+        }, "vendedor": { "nombre": "AutoElite", "rating": 4.8, "reviews": 215, "direccion": "Av. Villa Rosa, 1, 29004 Málaga" } 
+    },
+    { "id": 12, 
+        "nombre": "McLaren 600LT", 
+        "precio": 319000, 
+        "pago_mensual": 4500,
+        "calificacion_precio": "justo",
+        "tipo": "venta", 
+        "marca": "McLaren", 
+        "color": "Gris", 
+        "ano": 2020, 
+        "kilometraje": 3500, 
+        "potencia_cv": 600,
+        "destacado": true, 
+        "imagenUrl": "assets/vehiculos/mclaren.png", 
+        "imagenes_galeria": [
+            "assets/vehiculos/rueda_mclaren.png",
+            "assets/vehiculos/culo_mclaren.png",
+            "assets/vehiculos/interior_mclaren.png"
+            ], 
+        "datos_tecnicos": { 
+                "categoria": "Cabrio / Roadster",
+                "kilometraje": "3.500 km",
+                "potencia": "441 kW (600 CV)",
+                "combustible": "Gasolina",
+                "caja_de_cambios": "Automático",
+                "primera_inscripcion": "03/2020"
+        }, "vendedor": { "nombre": "AutoElite", "rating": 4.8, "reviews": 215, "direccion": "Av. Villa Rosa, 1, 29004 Málaga" } 
+    },
+    { "id": 13, 
+        "nombre": "Corvette Z06", 
+        "precio": 199500, 
+        "pago_mensual": 3000,
+        "calificacion_precio": "justo",
+        "tipo": "venta", 
+        "marca": "Corvette", 
+        "color": "Negro", 
+        "ano": 2025, 
+        "kilometraje": 100, 
+        "potencia_cv": 670,
+        "destacado": false, 
+        "imagenUrl": "assets/vehiculos/corvette.png", 
+        "imagenes_galeria": [
+            "assets/vehiculos/logo_corvette.png",
+            "assets/vehiculos/culo_corvette.png",
+            "assets/vehiculos/interior_corvette.png"
+            ], 
+        "datos_tecnicos": { 
+                "categoria": "Cabrio / Roadster",
+                "kilometraje": "100 km",
+                "potencia": "493 kW (670 CV)",
+                "combustible": "Gasolina",
+                "caja_de_cambios": "Automático",
+                "primera_inscripcion": "04/2025"
+        }, "vendedor": { "nombre": "AutoElite", "rating": 4.8, "reviews": 215, "direccion": "Av. Villa Rosa, 1, 29004 Málaga" } 
+    },
+    { "id": 14, 
+        "nombre": "Volkswagen Golf GTI", 
+        "precio": 31900, 
+        "pago_mensual": 650,
+        "calificacion_precio": "muy_buen",
+        "tipo": "venta", 
+        "marca": "Volkswagen", 
+        "color": "Amarillo", 
+        "ano": 2021, 
+        "kilometraje": 70000, 
+        "potencia_cv": 300,
+        "destacado": false, 
+        "imagenUrl": "assets/vehiculos/golf.png", 
+        "imagenes_galeria": [
+            "assets/vehiculos/cara_golf.png",
+            "assets/vehiculos/culo_golf.png",
+            "assets/vehiculos/interior_golf.png"
+            ], 
+        "datos_tecnicos": { 
+                "categoria": "Compacto Deportivo",
+                "kilometraje": "70.000 km",
+                "potencia": "221 kW (300 CV)",
+                "combustible": "Gasolina",
+                "caja_de_cambios": "Automático",
+                "primera_inscripcion": "08/2021"
+        }, "vendedor": { "nombre": "AutoElite", "rating": 4.8, "reviews": 215, "direccion": "Av. Villa Rosa, 1, 29004 Málaga" } 
+    },
+    { "id": 15, 
+        "nombre": "Lamborghini Huracán STO", 
+        "precio": 369990, 
+        "pago_mensual": 5500,
+        "calificacion_precio": "aumentado",
+        "tipo": "venta", 
+        "marca": "Lamborghini", 
+        "color": "Verde", 
+        "ano": 2022, 
+        "kilometraje": 6000, 
+        "potencia_cv": 639,
+        "destacado": true, 
+        "imagenUrl": "assets/vehiculos/lambosto.png", 
+        "imagenes_galeria": [
+            "assets/vehiculos/sto.png",
+            "assets/vehiculos/culo_lambosto.png",
+            "assets/vehiculos/interior_lambosto.png"
+            ], 
+        "datos_tecnicos": { 
+                "categoria": "Deportivo / Coupé",
+                "kilometraje": "6.000 km",
+                "potencia": "470 kW (639 CV)",
+                "combustible": "Gasolina",
+                "caja_de_cambios": "Automático",
+                "primera_inscripcion": "11/2022"
+        }, "vendedor": { "nombre": "AutoElite", "rating": 4.8, "reviews": 215, "direccion": "Av. Villa Rosa, 1, 29004 Málaga" } 
+    },
+    {
+        "id": 16,
+        "nombre": "Mercedes-Benz G 63 AMG",
+        "precio": 350,
+        "tipo": "alquiler",
+        "marca": "Mercedes-Benz",
+        "color": "Negro",
+        "ano": 2022,
+        "kilometraje": 74000,
+        "potencia_cv": 585,
+        "destacado": false,
+        "imagenUrl": "assets/vehiculos/mercedesg.png",
+        "imagenes_galeria": [
+            "assets/vehiculos/lado_mercedesg.png",
+            "assets/vehiculos/culo_mercedesg.png",
+            "assets/vehiculos/interior_mercedesg.png"
+        ],
+        "datos_tecnicos": { "categoria": "SUV", "potencia": "430 kW (585 CV)", "caja_de_cambios": "Automático", "combustible": "Gasolina", "kilometraje": "1.000 km" },
+        "vendedor": { "nombre": "AutoElite Rentals", "rating": 4.9, "reviews": 120, "direccion": "Av. Villa Rosa, 1, 29004 Málaga" }
+    },
+    { "id": 17, "nombre": "Porsche 911 Targa", "precio": 450, "tipo": "alquiler", "marca": "Porsche", "color": "Rojo", "ano": 2024, "kilometraje": 500, "destacado": false, "imagenUrl": "assets/vehiculos/coche-default.png", "imagenes_galeria": ["assets/vehiculos/coche-detalle-1.png"], "datos_tecnicos": { "caja_de_cambios": "Automático", "combustible": "Gasolina", "kilometraje": "500 km" }, "vendedor": { "nombre": "AutoElite Rentals", "rating": 4.9, "reviews": 120, "direccion": "Av. Villa Rosa, 1, 29004 Málaga" } },
+    { "id": 18, "nombre": "BMW i8 Roadster", "precio": 300, "tipo": "alquiler", "marca": "BMW", "color": "Blanco", "ano": 2023, "kilometraje": 3000, "destacado": false, "imagenUrl": "assets/vehiculos/coche-default.png", "imagenes_galeria": ["assets/vehiculos/coche-detalle-1.png"], "datos_tecnicos": { "caja_de_cambios": "Automático", "combustible": "Híbrido", "kilometraje": "3.000 km" }, "vendedor": { "nombre": "AutoElite Rentals", "rating": 4.9, "reviews": 120, "direccion": "Av. Villa Rosa, 1, 29004 Málaga" } },
+    { "id": 19, "nombre": "Audi RS Q8", "precio": 380, "tipo": "alquiler", "marca": "Audi", "color": "Azul", "ano": 2024, "kilometraje": 2000, "destacado": false, "imagenUrl": "assets/vehiculos/coche-default.png", "imagenes_galeria": ["assets/vehiculos/coche-detalle-1.png"], "datos_tecnicos": { "caja_de_cambios": "Automático", "combustible": "Gasolina", "kilometraje": "2.000 km" }, "vendedor": { "nombre": "AutoElite Rentals", "rating": 4.9, "reviews": 120, "direccion": "Av. Villa Rosa, 1, 29004 Málaga" } },
+    { "id": 20, "nombre": "Range Rover Sport", "precio": 280, "tipo": "alquiler", "marca": "Land Rover", "color": "Gris", "ano": 2023, "kilometraje": 5000, "destacado": false, "imagenUrl": "assets/vehiculos/coche-default.png", "imagenes_galeria": ["assets/vehiculos/coche-detalle-1.png"], "datos_tecnicos": { "caja_de_cambios": "Automático", "combustible": "Diésel", "kilometraje": "5.000 km" }, "vendedor": { "nombre": "AutoElite Rentals", "rating": 4.9, "reviews": 120, "direccion": "Av. Villa Rosa, 1, 29004 Málaga" } }
+]

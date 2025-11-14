@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceso Clientes - AutoElite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-page">
+
+    <div class="login-wrapper">
+        <a href="index.html" class="logo">
+            <img src="assets/logo-autoelite.png" alt="AutoElite Logo" class="logo-light">
+            <img src="assets/logo-autoelite-blanco.png" alt="AutoElite Logo" class="logo-dark">
+        </a>
+        <h2 class="company-name">AutoElite</h2>
+        
+        <div class="login-tabs">
+            <button class="tab-link active" data-tab="login-form-box" data-key="login_tab_login">Iniciar Sesión</button>
+            <button class="tab-link" data-tab="register-form-box" data-key="login_tab_register">Registrar</button>
+        </div>
+
+        <div id="login-form-box" class="login-container tab-content active">
+            <h1 data-key="login_title_cliente">Acceso Clientes</h1>
+            <form id="login-form">
+                <div class="form-group"><label for="login-email" data-key="login_email">Email</label><input type="email" id="login-email" name="email" required></div>
+                <div class="form-group"><label for="login-password" data-key="login_pass">Contraseña</label><input type="password" id="login-password" name="password" required></div>
+                <button type="submit" class="btn btn-primario full-width" data-key="login_btn_login">Entrar</button>
+            </form>
+        </div>
+        
+        <div id="register-form-box" class="login-container tab-content">
+            <h1 data-key="login_title_register">Crear Cuenta</h1>
+            <form id="register-form">
+                <div class="form-group"><label for="register-name" data-key="login_form_nombre">Nombre Completo</label><input type="text" id="register-name" name="name" required></div>
+                <div class="form-group"><label for="register-email" data-key="login_email">Email</label><input type="email" id="register-email" name="email" required></div>
+                <div class="form-group"><label for="register-password" data-key="login_pass">Contraseña</label><input type="password" id="register-password" name="password" required></div>
+                <button type="submit" class="btn btn-primario full-width" data-key="login_btn_register">Registrar</button>
+            </form>
+        </div>
+
+        <div class="login-footer-links">
+            <a href="index.html" class="back-link" data-key="login_back">← Volver al inicio</a>
+            <a href="acceso-personal.html" class="staff-link" data-key="nav_login_staff">Acceso Personal</a>
+        </div>
+    </div>
+    
+    <script defer src="script.js"></script>
+</body>
+</html>
