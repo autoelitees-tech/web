@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensajes - Panel de Admin</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <aside class="admin-sidebar">
+        <h2>AutoElite Panel</h2>
+        <nav class="admin-nav">
+            <a href="admin-dashboard.html">Dashboard</a>
+            <a href="admin-vehiculos.html">Gestionar Vehículos</a>
+            <a href="admin-mensajes.html" class="active">Ver Mensajes</a>
+            <a href="#" id="logout-button" class="logout">Cerrar Sesión</a>
+        </nav>
+    </aside>
+
+    <main class="admin-main">
+        <h1>Mensajes de Clientes</h1>
+        
+        <div class="admin-table-wrapper">
+            <table class="admin-table">
+                <thead>
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Nombre</th>
+                        <th>Email</th>
+                        <th>Mensaje</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody id="mensajes-table-body">
+                    </tbody>
+            </table>
+        </div>
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script defer src="admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehículos - Panel de Admin</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <aside class="admin-sidebar">
+        <h2>AutoElite Panel</h2>
+        <nav class="admin-nav">
+            <a href="admin-dashboard.html">Dashboard</a>
+            <a href="admin-vehiculos.html" class="active">Gestionar Vehículos</a>
+            <a href="admin-mensajes.html">Ver Mensajes</a>
+            <a href="#" id="logout-button" class="logout">Cerrar Sesión</a>
+        </nav>
+    </aside>
+
+    <main class="admin-main">
+        <h1>Gestionar Vehículos</h1>
+        <div class="admin-table-wrapper">
+            <table class="admin-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Marca</th>
+                        <th>Precio</th>
+                        <th>Tipo</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="vehiculos-table-body">
+                    </tbody>
+            </table>
+        </div>
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script defer src="admin.js"></script>
+</body>
+</html>

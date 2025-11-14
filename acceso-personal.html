@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acceso Personal - AutoElite</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
 <body class="login-page">
 
@@ -16,11 +15,14 @@
         </a>
         <h2 class="company-name">AutoElite</h2>
 
-        <div class="login-container" style="border-radius: 0 0 12px 12px;">
+        <div class="login-container" style="border-radius: 12px; border-top: 1px solid var(--color-borde);">
             <h1 data-key="login_title_staff">Acceso Personal</h1>
             <p data-key="login_desc_staff">Área privada para el personal de la empresa.</p>
+            
+            <p id="error-message" style="color: red; display: none;"></p>
+            
             <form id="staff-login-form">
-                <div class="form-group"><label for="staff-username" data-key="login_user">Usuario</label><input type="text" id="staff-username" name="username" required></div>
+                <div class="form-group"><label for="staff-email" data-key="login_email">Email</label><input type="email" id="staff-email" name="email" required></div>
                 <div class="form-group"><label for="staff-password" data-key="login_pass">Contraseña</label><input type="password" id="staff-password" name="password" required></div>
                 <button type="submit" class="btn btn-primario full-width" data-key="login_btn_login">Entrar</button>
             </form>
@@ -31,7 +33,8 @@
         </div>
     </div>
 
-    <script defer src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    
+    <script defer src="admin.js"></script>
 </body>
-
 </html>
