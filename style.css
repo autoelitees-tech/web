@@ -515,19 +515,23 @@ body.dark-mode .logo .logo-light { display: none; }
     object-fit: cover;
     display: block;
 }
+/* En AutoElite/style.css */
+
 .list-item-thumbnails {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex; /* CAMBIO: Usamos flex en lugar de grid */
     gap: 2px; 
     padding: 2px;
-}
-.list-item-thumbnails img {
     width: 100%;
+}
+
+.list-item-thumbnails img {
+    flex: 1; /* CAMBIO: Las imágenes se estiran para llenar el hueco */
+    width: 0; /* Truco para que flex funcione bien con imágenes */
+    min-width: 0;
     height: 70px; 
     object-fit: cover;
     border: 1px solid var(--color-borde);
 }
-
 .list-item-content {
     padding: 1.5rem;
     display: flex;
