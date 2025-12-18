@@ -3,132 +3,222 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AutoElite - Concesionario Premium</title>
+    <title>Inicio | Turkish de la Torre</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header class="main-header">
-        <div class="container">
-            <a href="index.html" class="logo">
-                <img src="assets/logo-autoelite.png" alt="AutoElite Logo" class="logo-light">
-                <img src="assets/logo-autoelite-blanco.png" alt="AutoElite Logo" class="logo-dark">
-            </a>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="index.html" data-key="nav_inicio" class="active">Inicio</a></li> 
-                    <li><a href="vehiculos.html" data-key="nav_vehiculos">Vehículos</a></li>
-                    <li><a href="vender.html" data-key="nav_vender">Vender</a></li>
-                    <li><a href="servicios.html" data-key="nav_servicios">Otros Servicios</a></li>
-                    <li><a href="ubicacion.html" data-key="nav_ubicacion">Donde Encontrarnos</a></li>
-                    <li><a href="soporte.html" data-key="nav_soporte">Soporte</a></li>
-                </ul>
-            </nav>
-            <div class="header-right">
-                <form class="search-bar"><input type="text" placeholder="Buscar..." data-key="search_placeholder"><button type="submit">🔍</button></form>
-                <div class="lang-switcher"><button id="lang-es">ES</button><span>/</span><button id="lang-en">EN</button></div>
-                <div class="theme-switch-wrapper"><label class="theme-switch" for="theme-toggle"><input type="checkbox" id="theme-toggle" /><span class="slider round"></span></label></div>
-                <a href="login.html" class="login-link" data-key="nav_login_cliente">Acceso Clientes</a>
-            </div>
+    <header>
+        <div class="logo-area">
+            <img src="assest/logo_turkish.jpg" alt="Escudo" class="logo-img">
+            <div class="brand-name">Turkish De La Torre</div>
         </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="partidos.html">Partidos</a></li>
+                <li><a href="plantilla.html">Plantilla</a></li>
+
+                <li><button class="theme-btn" id="theme-toggle"><i class="fas fa-moon"></i><i class="fas fa-sun"></i></button></li>
+            </ul>
+        </nav>
     </header>
 
-    <main>
-        <section class="hero" style="background-image: url('assets/foto_guapa.png');">
-            <div class="hero-content">
-                <h1 data-key="hero_title">Excelencia en Cada Kilómetro</h1>
-                <p data-key="hero_subtitle">Descubre nuestra exclusiva colección de vehículos premium</p>
-                <div class="hero-buttons"><a href="vehiculos.html" class="btn btn-primario" data-key="hero_btn_vehiculos">Ver Vehículos</a><a href="soporte.html" class="btn btn-secundario" data-key="hero_btn_asesor">Contactar Asesor</a></div>
-            </div>
-        </section>
+    <section class="carousel-container">
+        <div class="slide active">
+            <img src="assest/equipo.jpg" onclick="openLightbox(this.src)">
+        </div>
+        <div class="slide">
+            <img src="assest/equipo2.JPG" onclick="openLightbox(this.src)">
+        </div>
+        <div class="carousel-controls">
+            <button class="control-btn" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="control-btn" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    </section>
 
-        <section class="about-us">
-            <div class="container about-us-grid">
-                <div class="about-us-image"><img src="assets/equipo-autoelite.jpg" alt="Equipo de AutoElite"></div>
-                <div class="about-us-content">
-                    <h2 data-key="about_title">Quiénes Somos</h2>
-                    <p data-key="about_p1">En AutoElite, no solo vendemos coches; ofrecemos experiencias. Con más de 25 años en el sector de vehículos de lujo, nuestro concesionario se ha convertido en un referente de calidad, confianza y servicio al cliente.</p>
-                    <p data-key="about_p2">Nuestra misión es simple: conectar a nuestros clientes con el vehículo de sus sueños, asegurando un proceso de compra transparente, ágil y totalmente personalizado.</p>
-                    <a href="ubicacion.html" class="btn btn-primario" data-key="about_btn">Conócenos</a>
-                </div>
-            </div>
-        </section>
+    <section class="container">
+        
+        <div class="section-header-row">
+            <h2 class="section-title" style="margin-bottom: 0;">Últimos Partidos</h2>
+            <a href="partidos.html" class="see-all-link">Ver todos los partidos <i class="fas fa-arrow-right"></i></a>
+        </div>
 
-        <section class="featured-vehicles">
-            <div class="container">
-                <h2 data-key="home_featured_title">Vehículos Destacados</h2>
-                <div class="carousel">
-                    <div class="carousel-track" id="featured-carousel">
-                        </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="how-it-works">
-            <div class="container">
-                <h2 data-key="home_how_it_works_title">Tu Próximo Coche en 3 Pasos</h2>
+        <div class="matches-container">
+            
+            <div class="match-card" onclick="openMatchModal('Resumen del Partido', '5 - 4', 
+                `<div class='event-list'>
+                    <div class='event-row type-goal'><div class='event-info'><h4>¡GOOL!</h4><p>Papoño</p></div><i class='fas fa-futbol event-icon'></i></div>
+                    <div class='event-row type-goal'><div class='event-info'><h4>¡GOOL!</h4><p>Riki</p></div><i class='fas fa-futbol event-icon'></i></div>
+                    <div class='event-row type-goal'><div class='event-info'><h4>¡GOOL!</h4><p>Said (x2)</p></div><i class='fas fa-futbol event-icon'></i></div>
+                    <div class='event-row type-goal'><div class='event-info'><h4>¡GOOL!</h4><p>Arenas</p></div><i class='fas fa-futbol event-icon'></i></div>
+                    <div class='event-row type-yellow'><div class='event-info'><h4>Amonestación</h4><p>Kuko</p></div><i class='fas fa-square event-icon' style='transform: rotate(90deg);'></i></div>
+                </div>`, 
+                ['assest/payito.JPG', 'assest/payo2.JPG'])">
                 
-                <img src="assets/imagen-venta.jpg" alt="Proceso de compra" class="how-it-works-main-image">
-
-                <div class="steps-grid">
-                    <div class="step-item"><span>1</span><h3 data-key="home_step1_title">Explora</h3><p data-key="home_step1_desc">Usa nuestros filtros para encontrar el coche perfecto para ti.</p></div>
-                    <div class="step-item"><span>2</span><h3 data-key="home_step2_title">Contacta</h3><p data-key="home_step2_desc">Habla con un asesor y agenda una prueba de conducción.</p></div>
-                    <div class="step-item"><span>3</span><h3 data-key="home_step3_title">Disfruta</h3><p data-key="home_step3_desc">Completa la compra de forma ágil y llévate tu nuevo vehículo.</p></div>
+                <div class="teams-row">
+                    <div class="team"><img src="assest/logo_turkish.jpg"><span>TURKISH DE LA TORRE</span></div>
+                    <div class="score">5 - 4</div>
+                    <div class="team"><img src="assest/payo.png"><span>EL PAYO CAYETANO</span></div>
                 </div>
+                <p>14/12/2025 - Jornada 11</p>
             </div>
-        </section>
-    </main>
 
-    <footer class="main-footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-column"><h4>AutoElite</h4><p data-key="footer_desc">Tu concesionario de confianza...</p></div>
-                <div class="footer-column"><h4 data-key="nav_contacto">Contacto</h4><p>+34 900 123 456</p><p>info@autoelite.com</p></div>
-                <div class="footer-column"><h4 data-key="footer_social">Síguenos</h4><div class="social-icons"><a href="#">(fb)</a> <a href="#">(ig)</a> <a href="#">(tw)</a> <a href="#">(in)</a></div></div>
-            </div>
-            <div class="footer-bottom">
-                <div class="legal-links"><a href="#" data-key="footer_legal">Aviso Legal</a><a href="#" data-key="footer_privacy">Política de Privacidad</a><a href="#" data-key="footer_cookies">Política de Cookies</a></div>
-                <div class="copyright">
-                    <p>© 2025 AutoElite. <span data-key="footer_rights">Todos los derechos reservados.</span></p>
+            <div class="match-card" onclick="openMatchModal('Resumen del Partido', '1 - 4', 
+                `<div class='event-list'>
+                    <div class='event-row type-goal'><div class='event-info'><h4>¡GOOL!</h4><p>Arenas</p></div><i class='fas fa-futbol event-icon'></i></div>
+                    <div class='event-row type-goal'><div class='event-info'><h4>¡GOOL!</h4><p>Jorge</p></div><i class='fas fa-futbol event-icon'></i></div>
+                    <div class='event-row type-goal'><div class='event-info'><h4>¡GOOL!</h4><p>Carols</p></div><i class='fas fa-futbol event-icon'></i></div>
+                    <div class='event-row type-goal'><div class='event-info'><h4>¡GOOL!</h4><p>Diego (p.p)</p></div><i class='fas fa-futbol event-icon'></i></div>
+                    <div class='event-row type-yellow'><div class='event-info'><h4>Amonestación</h4><p>Riki</p></div><i class='fas fa-square event-icon' style='transform: rotate(90deg);'></i></div>
+                    <div class='event-row type-yellow'><div class='event-info'><h4>Amonestación</h4><p>Carlos</p></div><i class='fas fa-square event-icon' style='transform: rotate(90deg);'></i></div>
+
+                </div>`, 
+                ['assest/la_roca.jpg', 'assest/equipo.jpg'])">
+                
+                <div class="teams-row">
+                    <div class="team"><img src="assest/la_roca.jpg"><span>UD LA ROCA</span></div>
+                    <div class="score">1 - 4</div>
+                    <div class="team"><img src="assest/logo_turkish.jpg"><span>TURKISH DE LA TORRE</span></div>
                 </div>
+                <p>06/12/2025 - Jornada 10</p>
             </div>
+
+            <div class="match-card" onclick="openMatchModal('Resumen del Partido', '2 - 2', 
+                `<div class='event-list'>
+                    <div class='event-row type-goal'><div class='event-info'><h4>¡GOOL!</h4><p>Said</p></div><i class='fas fa-futbol event-icon'></i></div>
+                    <div class='event-row type-goal'><div class='event-info'><h4>¡GOOL!</h4><p>Mario Flores</p></div><i class='fas fa-futbol event-icon'></i></div>
+                </div>`, 
+                ['assest/duendes.png'])">
+                
+                <div class="teams-row">
+                    <div class="team"><img src="assest/logo_turkish.jpg"><span>TURKISH DE LA TORRE</span></div>
+                    <div class="score">2 - 2</div>
+                    <div class="team"><img src="assest/duendes.png"><span>TEAM DUENDES</span></div>
+                </div>
+                <p>22/11/2025 - Jornada 9</p>
+            </div>
+
+        </div>
+    </section>
+
+    <hr class="full-divider">
+
+    <section class="container">
+        <div style="text-align: left; margin-bottom: 20px;">
+            <h2 class="section-title">Top Goleadores</h2>
+        </div>
+        
+        <div class="podium-container">
+            <div class="podium-item">
+                <div class="player-info"><span class="player-name">Carlos F.</span><span class="player-goals">5</span></div>
+                <div class="podium-bar pos-4">4</div>
+            </div>
+            <div class="podium-item">
+                <div class="player-info"><span class="player-name">Arenas</span><span class="player-goals">7</span></div>
+                <div class="podium-bar pos-2">2</div>
+            </div>
+            <div class="podium-item">
+                <div class="player-info pos-1-info"><i class="fas fa-crown" style="color:var(--primary-gold); margin-bottom:5px;"></i><span class="player-name">Said</span><span class="player-goals">12</span></div>
+                <div class="podium-bar pos-1">1</div>
+            </div>
+            <div class="podium-item">
+                <div class="player-info"><span class="player-name">Mario F.</span><span class="player-goals">7</span></div>
+                <div class="podium-bar pos-3">3</div>
+            </div>
+            <div class="podium-item">
+                <div class="player-info"><span class="player-name">A. Luque</span><span class="player-goals">4</span></div>
+                <div class="podium-bar pos-5">5</div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="full-divider">
+
+    <section class="container shop-section">
+        <div style="text-align: left; margin-bottom: 20px;">
+            <h2 class="section-title">Tienda Oficial</h2>
+        </div>
+        <div class="shop-grid">
+            <div class="shop-card">
+                <img src="assest/camiseta.jpg" alt="Camiseta" class="shop-img">
+                <h3>Camiseta</h3>
+                <p style="color: #666; font-size: 0.9rem;">Temporada 25/26</p>
+                <div class="price-tag">25,00€</div>
+                <a href="https://zentral.es/producto/turkish-de-la-torre/" target="_blank" class="buy-btn">COMPRAR</a>
+            </div>
+            <div class="shop-card">
+                <img src="assest/pantalon.jpg" alt="Pantalon" class="shop-img">
+                <h3>Pantalón</h3>
+                <p style="color: #666; font-size: 0.9rem;">Temporada 25/26</p>
+                <div class="price-tag">9,95€</div>
+                <a href="https://zentral.es/producto/turkish-de-la-torre/" target="_blank" class="buy-btn">COMPRAR</a>
+            </div>
+            <div class="shop-card">
+                <img src="assest/sudadera.jpg" alt="Sudadera" class="shop-img">
+                <h3>Sudadera</h3>
+                <p style="color: #666; font-size: 0.9rem;">Edición Invierno</p>
+                <div class="price-tag">24,95€</div>
+                <a href="https://zentral.es/producto/turkish-de-la-torre/" target="_blank" class="buy-btn">COMPRAR</a>
+            </div>
+            <div class="shop-card">
+                <img src="assest/polo.jpg" alt="Polo" class="shop-img">
+                <h3>Polo</h3>
+                <p style="color: #666; font-size: 0.9rem;">Edicion Verano</p>
+                <div class="price-tag">19,95€</div>
+                <a href="https://zentral.es/producto/turkish-de-la-torre/" target="_blank" class="buy-btn">COMPRAR</a>
+            </div>
+            <div class="shop-card">
+                <img src="assest/mochila.jpg" alt="Mochila" class="shop-img">
+                <h3>Mochila Entrenamiento</h3>
+                <p style="color: #666; font-size: 0.9rem;">Con zapatillero incluido</p>
+                <div class="price-tag">18,95€</div>
+                <a href="https://zentral.es/producto/turkish-de-la-torre/" target="_blank" class="buy-btn">COMPRAR</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-left">
+            <h4>AVISOS LEGALES</h4>
+            <div class="legal-links">
+                <a onclick="cookieAlert()">Política de Cookies</a>
+                <a onclick="cookieAlert()">Aviso Legal</a>
+            </div>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/turkishdelatorrecf?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
         </div>
     </footer>
 
-    <div id="legal-modal" class="modal-overlay">
+    <div id="matchModal" class="modal">
         <div class="modal-content">
-            <button class="modal-close-btn">×</button>
-            <h2 id="legal-modal-title"></h2>
-            <div id="legal-modal-content">
-                <p>Cargando contenido...</p>
+            <span class="close" onclick="closeMatchModal()">&times;</span>
+            
+            <div class="match-modal-left">
+                <h2 id="modalMatchTitle" class="match-title"></h2>
+                <h1 id="modalScore" class="match-score"></h1>
+                <div id="modalDetails"></div>
+            </div>
+
+            <div class="match-modal-right">
+                <div class="modal-carousel-wrapper">
+                    <button class="m-arrow m-prev" onclick="changeMatchSlide(-1)">&#10094;</button>
+                    <div id="matchSlidesContainer"></div>
+                    <button class="m-arrow m-next" onclick="changeMatchSlide(1)">&#10095;</button>
+                </div>
             </div>
         </div>
     </div>
 
-    <div id="purchase-modal" class="modal-overlay">
-        <div class="modal-content">
-            <button class="modal-close-btn" id="purchase-modal-close">×</button>
-            <h2 data-key="modal_title">Proceso de Compra</h2>
-            <p data-key="modal_desc">Estás a punto de iniciar la reserva de:</p>
-            <h3 id="modal-vehicle-name"></h3>
-            <p data-key="modal_step1"><b>Paso 1:</b> Un asesor se pondrá en contacto contigo.</p>
-            <p data-key="modal_step2"><b>Paso 2:</b> Confirmación y documentación.</p>
-            <p data-key="modal_step3"><b>Paso 3:</b> ¡Recogida de tu vehículo!</p>
-            <button class="btn btn-primario" id="purchase-modal-confirm" data-key="modal_confirm">Confirmar Interés</button>
-        </div>
-    </div>
-    
-    <div id="success-modal" class="modal-overlay">
-        <div class="modal-content success-modal-content">
-            <div class="success-icon">✓</div>
-            <h3 data-key="modal_title">¡Gracias por tu interés!</h3>
-            <p data-key="modal_desc_simulacion">Un asesor se contactará pronto. (Simulación)</p>
-            <button class="btn btn-primario" id="success-modal-close" data-key="modal_aceptar">Aceptar</button>
-        </div>
+    <div id="lightboxModal" class="modal" style="background:rgba(0,0,0,0.95)">
+        <span class="close" onclick="closeLightbox()" style="color:white">&times;</span>
+        <img class="lightbox-img" id="lightboxImage">
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-
-    <script defer src="script-supabase.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

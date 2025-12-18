@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantilla | Turkish de la Torre</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-area">
+            <img src="assest/logo_turkish.jpg" alt="Escudo" class="logo-img">
+            <div class="brand-name">Turkish De La Torre</div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="partidos.html">Partidos</a></li>
+                <li><a href="plantilla.html" style="color:white; border-bottom:2px solid white;">Plantilla</a></li>
+
+                <li><button class="theme-btn" id="theme-toggle"><i class="fas fa-moon"></i><i class="fas fa-sun"></i></button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="container">
+        <h2 class="section-title">Plantilla 2024/2025</h2>
+
+        <div class="squad-layout">
+            
+            <div class="field-column">
+                <h3 class="tactic-title">Alineación Habitual</h3>
+                <div class="football-field">
+                    <div class="field-area-top"></div>
+                    <div class="field-line-center"></div>
+                    <div class="field-circle"></div>
+                    <div class="field-area-bottom"></div>
+                    <div class="tactic-dot pos-gk">16 <span class="tactic-name">Cesgre</span></div>
+                    <div class="tactic-dot pos-def-l">11 <span class="tactic-name">Riki</span></div>
+                    <div class="tactic-dot pos-def-c">7 <span class="tactic-name">Kuko</span></div>
+                    <div class="tactic-dot pos-def-r">15 <span class="tactic-name">Dani</span></div>
+                    <div class="tactic-dot pos-mid-l">24 <span class="tactic-name">Nacho</span></div>
+                    <div class="tactic-dot pos-mid-r">21 <span class="tactic-name">Carlos</span></div>
+                    <div class="tactic-dot pos-st">9 <span class="tactic-name">Said</span></div>
+                </div>
+            </div>
+
+            <div class="roster-column">
+                <div class="roster-grid">
+                    
+                    <div class="player-card" onclick="openPlayerModal('César Gre Salazar', 'Cesgre', 'Portero', '16', '24', '0', '0', '0', ['assest/cesar1.JPG'])">
+                        <div class="player-header">
+                            <span class="player-number-badge">16</span>
+                            <img src="https://via.placeholder.com/300x300/CCCCCC/000000?text=CESAR" class="player-img">
+                        </div>
+                        <div class="player-info-card">
+                            <h3 class="player-name-card">César Gre</h3>
+                            <p class="player-pos-card">Portero</p>
+                        </div>
+                    </div>
+
+                    <div class="player-card" onclick="openPlayerModal('Mario Flores', 'Kuko', 'Defensa', '7', '22', '1', '4', '0', ['assest/equipo.jpg'])">
+                        <div class="player-header">
+                            <span class="player-number-badge">7</span>
+                            <img src="https://via.placeholder.com/300x300/CCCCCC/000000?text=KUKO" class="player-img">
+                        </div>
+                        <div class="player-info-card">
+                            <h3 class="player-name-card">Mario Flores</h3>
+                            <p class="player-pos-card">Defensa</p>
+                        </div>
+                    </div>
+
+                    <div class="player-card" onclick="openPlayerModal('Manuel Roldán', 'Manu', 'Defensa', '2', '21', '0', '2', '0', ['assest/equipo.jpg'])">
+                        <div class="player-header">
+                            <span class="player-number-badge">2</span>
+                            <img src="https://via.placeholder.com/300x300/CCCCCC/000000?text=ROLDAN" class="player-img">
+                        </div>
+                        <div class="player-info-card">
+                            <h3 class="player-name-card">Manuel Roldán</h3>
+                            <p class="player-pos-card">Defensa</p>
+                        </div>
+                    </div>
+
+                    <div class="player-card" onclick="openPlayerModal('Miguel Ángel González', 'Migu', 'Defensa', '22', '23', '2', '1', '0', ['assest/equipo.jpg'])">
+                        <div class="player-header">
+                            <span class="player-number-badge">22</span>
+                            <img src="https://via.placeholder.com/300x300/CCCCCC/000000?text=MIGUEL" class="player-img">
+                        </div>
+                        <div class="player-info-card">
+                            <h3 class="player-name-card">Miguel Ángel</h3>
+                            <p class="player-pos-card">Defensa</p>
+                        </div>
+                    </div>
+                    
+                    <div class="player-card" onclick="openPlayerModal('Ricardo González', 'Riki', 'Lateral', '11', '21', '1', '3', '0', ['assest/riki2.JPG'])">
+                        <div class="player-header">
+                            <span class="player-number-badge">11</span>
+                            <img src="assest/riki1.JPG" class="player-img">
+                        </div>
+                        <div class="player-info-card">
+                            <h3 class="player-name-card">Ricardo</h3>
+                            <p class="player-pos-card">Lateral</p>
+                        </div>
+                    </div>
+
+                    <div class="player-card" onclick="openPlayerModal('Daniel Del Río', 'Dani', 'Lateral', '15', '22', '2', '1', '0', ['assest/equipo.jpg'])">
+                        <div class="player-header">
+                            <span class="player-number-badge">15</span>
+                            <img src="https://via.placeholder.com/300x300/CCCCCC/000000?text=DANI" class="player-img">
+                        </div>
+                        <div class="player-info-card">
+                            <h3 class="player-name-card">Dani</h3>
+                            <p class="player-pos-card">Lateral</p>
+                        </div>
+                    </div>
+                    
+                    <div class="player-card" onclick="openPlayerModal('Ignacio Subires', 'Nacho', 'Mediocentro', '24', '20', '0', '2', '0', ['assest/equipo.jpg'])">
+                        <div class="player-header">
+                            <span class="player-number-badge">24</span>
+                            <img src="https://via.placeholder.com/300x300/CCCCCC/000000?text=NACHO" class="player-img">
+                        </div>
+                        <div class="player-info-card">
+                            <h3 class="player-name-card">Nacho</h3>
+                            <p class="player-pos-card">Mediocentro</p>
+                        </div>
+                    </div>
+
+                    <div class="player-card" onclick="openPlayerModal('Carlos Fernández', 'Carlos', 'Mediocentro', '21', '22', '5', '4', '0', ['assest/carlos1.JPG'])">
+                        <div class="player-header">
+                            <span class="player-number-badge">21</span>
+                            <img src="assest/carlos1.JPG" class="player-img">
+                        </div>
+                        <div class="player-info-card">
+                            <h3 class="player-name-card">Carlos</h3>
+                            <p class="player-pos-card">Mediocentro</p>
+                        </div>
+                    </div>
+                    
+                     <div class="player-card" onclick="openPlayerModal('Jorge Palma', 'Palma', 'Mediocentro', '8', '21', '1', '2', '0', ['assest/palma1.JPG'])">
+                        <div class="player-header">
+                            <span class="player-number-badge">8</span>
+                            <img src="https://via.placeholder.com/300x300/CCCCCC/000000?text=PALMA" class="player-img">
+                        </div>
+                        <div class="player-info-card">
+                            <h3 class="player-name-card">Jorge Palma</h3>
+                            <p class="player-pos-card">Mediocentro</p>
+                        </div>
+                    </div>
+                    
+                    <div class="player-card" onclick="openPlayerModal('Jorge Arenas', 'Arenas', 'Extremo', '10', '23', '7', '2', '0', ['assest/arenas2.JPG'])">
+                        <div class="player-header">
+                            <span class="player-number-badge">10</span>
+                            <img src="assest/arenas1.JPG" class="player-img">
+                        </div>
+                        <div class="player-info-card">
+                            <h3 class="player-name-card">Arenas</h3>
+                            <p class="player-pos-card">Extremo</p>
+                        </div>
+                    </div>
+
+                    <div class="player-card" onclick="openPlayerModal('Said Alejandro', 'Said', 'Delantero', '9', '20', '12', '1', '0', ['assest/equipo.jpg', 'assest/said1'])">
+                        <div class="player-header">
+                            <span class="player-number-badge">9</span>
+                            <img src="https://via.placeholder.com/300x300/CCCCCC/000000?text=SAID" class="player-img">
+                        </div>
+                        <div class="player-info-card">
+                            <h3 class="player-name-card">Said</h3>
+                            <p class="player-pos-card">Delantero</p>
+                        </div>
+                    </div>
+                    
+                    <div class="player-card" onclick="openPlayerModal('Antonio Luque', 'Antonio', 'Delantero', '14', '22', '4', '0', '0', ['assest/antonio1.JPG'])">
+                        <div class="player-header">
+                            <span class="player-number-badge">14</span>
+                            <img src="assest/antonio1.JPG" class="player-img">
+                        </div>
+                        <div class="player-info-card">
+                            <h3 class="player-name-card">Antonio</h3>
+                            <p class="player-pos-card">Delantero</p>
+                        </div>
+                    </div>
+                    
+                    <div class="player-card" onclick="openPlayerModal('Juan Luis Tovar', 'Papoño', 'Delantero', '17', '19', '1', '0', '0', ['assest/papoño2.JPG'])">
+                        <div class="player-header">
+                            <span class="player-number-badge">17</span>
+                            <img src="assest/.JPG"player-img">
+                        </div>
+                        <div class="player-info-card">
+                            <h3 class="player-name-card">Papoño</h3>
+                            <p class="player-pos-card">Delantero</p>
+                        </div>
+                    </div>
+                    
+                    <div class="player-card" onclick="openPlayerModal('Alejandro Calderón', 'Calde', 'Portero (Res)', '1', '20', '0', '0', '0', ['assest/equipo.jpg'])">
+                        <div class="player-header">
+                            <span class="player-number-badge">1</span>
+                            <img src="https://via.placeholder.com/300x300/CCCCCC/000000?text=CALDERON" class="player-img">
+                        </div>
+                        <div class="player-info-card">
+                            <h3 class="player-name-card">Calde</h3>
+                            <p class="player-pos-card">Portero (Reserva)</p>
+                        </div>
+                    </div>
+
+                    <div class="player-card" onclick="openPlayerModal('Jorge Perea', 'Perea', 'Portero (Res)', '77', '21', '0', '0', '0', ['assest/equipo.jpg'])">
+                        <div class="player-header">
+                            <span class="player-number-badge">77</span>
+                            <img src="https://via.placeholder.com/300x300/CCCCCC/000000?text=PEREA" class="player-img">
+                        </div>
+                        <div class="player-info-card">
+                            <h3 class="player-name-card">Perea</h3>
+                            <p class="player-pos-card">Portero (Reserva)</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="playerModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closePlayerModal()">&times;</span>
+            
+            <div class="player-modal-left">
+                <div class="player-carousel-wrapper">
+                    <button class="p-arrow p-prev" onclick="changePlayerSlide(-1)">&#10094;</button>
+                    <div id="playerSlidesContainer"></div>
+                    <button class="p-arrow p-next" onclick="changePlayerSlide(1)">&#10095;</button>
+                </div>
+            </div>
+
+            <div class="player-modal-right">
+                <div class="pm-name" id="pmName">NOMBRE</div>
+                <div class="pm-nickname" id="pmNick">APODO</div>
+
+                <div class="pm-grid">
+                    <div class="pm-stat-box">
+                        <span class="pm-label">Posición</span>
+                        <span class="pm-value" id="pmPos">DEL</span>
+                    </div>
+                    <div class="pm-stat-box">
+                        <span class="pm-label">Dorsal</span>
+                        <span class="pm-value" id="pmNum">#0</span>
+                    </div>
+                    <div class="pm-stat-box">
+                        <span class="pm-label">Edad</span>
+                        <span class="pm-value" id="pmAge">00 Años</span>
+                    </div>
+                    <div class="pm-stat-box">
+                        <span class="pm-label">Goles</span>
+                        <span class="pm-value" id="pmGoals">0</span>
+                    </div>
+                </div>
+
+                <div class="pm-cards">
+                    <div class="card-stat">
+                        <span class="card-icon yellow-c"></span>
+                        <span id="pmYellow">0</span>
+                    </div>
+                    <div class="card-stat">
+                        <span class="card-icon red-c"></span>
+                        <span id="pmRed">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-left">
+            <h4>AVISOS LEGALES</h4>
+            <div class="legal-links">
+                <a onclick="cookieAlert()">Política de Cookies</a>
+                <a onclick="cookieAlert()">Aviso Legal</a>
+            </div>
+        </div>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
